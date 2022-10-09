@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00aeff;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: rgb(0, 255, 149);
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<h1>My Portfolio</h1>
+<hr>
+
+<h2>Hello there, my name is Quan (Azi)</h2>
+<p>This is my own Portfolio.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://www.webwise.ie/wp-content/uploads/2018/03/unnamed-1.png" alt="Roblox" style="width:100%">
+      <h3>Roblox</h3>
+      <p>Roblox is an online game platform and game creation system developed by Roblox Corporation that allows users to program games and play games created by other users.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://mindx.vn/images/logo-200.png" alt="MathX" style="width:100%">
+      <h3>MindX Technology School</h3>
+      <p>MindX School is the leading technology training center system in Vietnam today. MindX is the first and only place in Vietnam that simulates the high-tech Silicon Valley and has an inter-level education route from elementary school to university.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="YouTube" style="width:100%">
+      <h3>YouTube</h3>
+      <p>YouTube is an American online video sharing and social media platform headquartered in San Bruno, California.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://cdn.tgdd.vn/2020/04/GameApp/200x200-200x200-13.png" alt="Discord" style="width:100%">
+      <h3>Discord</h3>
+      <p>Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers".</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.jpg" alt="HTML" style="width:100%">
+  <h3>HTML</h3>
+  <p>HTML, or HyperText Markup Language, allows web users to create and structure sections, paragraphs, and links using elements, tags, and attributes.</p>
+  <p>However, it’s worth noting that HTML is not considered a programming language as it can’t create dynamic functionality.</p>
+</div>
+
+</div>
+
+</body>
+</html>

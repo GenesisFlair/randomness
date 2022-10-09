@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-epuiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name or number must be filled out");
+            return false;
+          }
+        }
+        </script>
+<p form id="f1" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+<div>
+<p form id="f2" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Age: <input type="text" name="fname">
+</div>
+<div>
+<p form id="f3" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Phone number: <input type="text" name="fname">
+</div>
+<p id="p1">Gender:</p>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</div>
+<div>
+<button type="button"
+onclick="document.getElementById('f1', 'f2', 'f3', 'p1').style.color = 'red'">
+Submit</button>
+</div>
+</form>
+
+</body>
+</html>

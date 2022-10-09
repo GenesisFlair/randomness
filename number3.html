@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-epuiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question moment</title>
+</head>
+<body>
+<script>
+     let myAnswer = [];
+     let myQuestions = [""]
+
+
+          let answer = prompt("Have you ever go to KFC before?", "Yes/No");
+          myAnswer.push(answer);
+          
+          if (answer == "Yes") prompt("Was it good?");
+          else answer = prompt("Is your mother a good mom to you?");
+
+          if (answer == "Yes") prompt("How are you dealing with her?");
+          else answer = prompt("Are you curious how evolution has come around?");
+
+          if (answer == "Yes") prompt("If so, are you interested in it?");
+          else answer = prompt("Did you recently tried KitKat wafers?");
+          
+          if (answer == "Yes") prompt("Did the chocolate coating satisfied you?");
+          else answer = prompt("Are you an annoyance to your face?");
+
+          if (answer == "Yes") prompt("Are you angry about it?");
+
+          myAnswer.push(answer);
+
+          console.log(myAnswer);
+    </script>
+</body>
+</html>
