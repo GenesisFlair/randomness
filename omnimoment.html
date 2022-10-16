@@ -1,0 +1,133 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Omnifood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://raw.githubusercontent.com/franexmo81/omnifood/master/resources/css/img/hero.jpg");
+  min-height: 90%;
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">FOOD DELIVERY</a>
+    <a href="#menu" class="w3-bar-item w3-button">HOW IT WORKS</a>
+    <a href="#about" class="w3-bar-item w3-button">OUR CITIES</a>
+    <a href="#myMap" class="w3-bar-item w3-button">SIGN UP</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">  
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Omnifood<br>GOODBYE JUNK FOOD. HELLO SUPER HEALTHY MEALS.</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Omnifood<br>GOODBYE JUNK FOOD. HELLO SUPER HEALTHY MEALS.</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the subscription</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Subscription</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter: 19.99$</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pro');">
+        <div class="w3-col s4 tabli   nk w3-padding-large w3-hover-red">Pro: 149.99$</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Premium');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Premium: 399.99$</div>
+      </a>
+    </div>
+      <hr>
+
+  </div>
+</div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
+    <p><strong>How It Works?</strong> Simple as 1, 2, 3</p>
+    <p>1.Choose the subscription plan that best fits your needs and sign up today.</p>
+    <p>2.Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+    <p>3.Enjoy your meal after less than 20 minutes. See you the next time!</p>
+    <img src="http://www.omnifood.net/resources/images/app-iPhone.png" style="width:20%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>We're currently in these cities</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>LISBON</p>
+        <p>SAN FRANCISCO</p>
+      </div>
+      <div class="w3-col s6">
+        <p>BERLIN</p>
+        <p>LONDON</p>      
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at 4 of our twitter:</p>
+    <p>@omnifood_lx</p>
+    <p>@omnifood_sf</p>
+    <p>@omnifood_berlin</p>
+    <p>@omnifood_london </p>
+    <p><span class="w3-tag">FYI!</span> We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+    <p class="w3-xxlarge"><strong>Send</strong> a message to us and we will reply:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Finding" required name="How did you found us"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Send it!  </button></p>
+    </form>
+  </div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
